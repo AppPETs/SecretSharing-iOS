@@ -7,14 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6024AF8F200EAD140017DAF4 /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6024AF85200EAAEA0017DAF4 /* QRCode.framework */; };
+		6024AF90200EAD140017DAF4 /* QRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6024AF85200EAAEA0017DAF4 /* QRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6024AF91200EAD2F0017DAF4 /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6024AF83200EAAE30017DAF4 /* Keychain.framework */; };
+		6024AF92200EAD2F0017DAF4 /* Keychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6024AF83200EAAE30017DAF4 /* Keychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6024AF93200EAD340017DAF4 /* Tafelsalz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6024AF87200EAAF10017DAF4 /* Tafelsalz.framework */; };
+		6024AF94200EAD340017DAF4 /* Tafelsalz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6024AF87200EAAF10017DAF4 /* Tafelsalz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		604AF090200E8D26000CE8F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604AF08F200E8D26000CE8F0 /* AppDelegate.swift */; };
 		604AF092200E8D26000CE8F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604AF091200E8D26000CE8F0 /* ViewController.swift */; };
 		604AF095200E8D26000CE8F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604AF093200E8D26000CE8F0 /* Main.storyboard */; };
 		604AF097200E8D26000CE8F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604AF096200E8D26000CE8F0 /* Assets.xcassets */; };
 		604AF09A200E8D26000CE8F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604AF098200E8D26000CE8F0 /* LaunchScreen.storyboard */; };
+		604AF0BC200E905A000CE8F0 /* PrivacyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604AF0AF200E8FA8000CE8F0 /* PrivacyKit.framework */; };
+		604AF0BD200E905A000CE8F0 /* PrivacyKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 604AF0AF200E8FA8000CE8F0 /* PrivacyKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		604AF0C1200E9074000CE8F0 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604AF0BB200E903C000CE8F0 /* QRCodeReader.framework */; };
+		604AF0C2200E9074000CE8F0 /* QRCodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 604AF0BB200E903C000CE8F0 /* QRCodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		604AF0AE200E8FA8000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 606011D71D36381C0076A6AA;
+			remoteInfo = PrivacyKit_iOS;
+		};
+		604AF0B0200E8FA8000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 606011E11D36381C0076A6AA;
+			remoteInfo = PrivacyKitTests_iOS;
+		};
+		604AF0B2200E8FA8000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 601834081F418B96003AE3D8;
+			remoteInfo = PrivacyKit_macOS;
+		};
+		604AF0B4200E8FA8000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 601834101F418B96003AE3D8;
+			remoteInfo = PrivacyKitTests_macOS;
+		};
+		604AF0BA200E903C000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0B6200E903C000CE8F0 /* QRCodeReader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60B2FDD01F3A0AB200E23DF9;
+			remoteInfo = QRCodeReader;
+		};
+		604AF0BE200E905A000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 606011D61D36381C0076A6AA;
+			remoteInfo = PrivacyKit_iOS;
+		};
+		604AF0C3200E9074000CE8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604AF0B6200E903C000CE8F0 /* QRCodeReader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B2FDCF1F3A0AB200E23DF9;
+			remoteInfo = QRCodeReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		604AF0C0200E905A000CE8F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6024AF90200EAD140017DAF4 /* QRCode.framework in Embed Frameworks */,
+				6024AF94200EAD340017DAF4 /* Tafelsalz.framework in Embed Frameworks */,
+				604AF0BD200E905A000CE8F0 /* PrivacyKit.framework in Embed Frameworks */,
+				6024AF92200EAD2F0017DAF4 /* Keychain.framework in Embed Frameworks */,
+				604AF0C2200E9074000CE8F0 /* QRCodeReader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6024AF83200EAAE30017DAF4 /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6024AF85200EAAEA0017DAF4 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6024AF87200EAAF10017DAF4 /* Tafelsalz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tafelsalz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		604AF08C200E8D26000CE8F0 /* SecretSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604AF08F200E8D26000CE8F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		604AF091200E8D26000CE8F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +105,8 @@
 		604AF096200E8D26000CE8F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		604AF099200E8D26000CE8F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		604AF09B200E8D26000CE8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PrivacyKit.xcodeproj; path = PrivacyKit/PrivacyKit.xcodeproj; sourceTree = "<group>"; };
+		604AF0B6200E903C000CE8F0 /* QRCodeReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QRCodeReader.xcodeproj; path = QRCodeReader/QRCodeReader.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +114,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6024AF8F200EAD140017DAF4 /* QRCode.framework in Frameworks */,
+				6024AF93200EAD340017DAF4 /* Tafelsalz.framework in Frameworks */,
+				604AF0BC200E905A000CE8F0 /* PrivacyKit.framework in Frameworks */,
+				6024AF91200EAD2F0017DAF4 /* Keychain.framework in Frameworks */,
+				604AF0C1200E9074000CE8F0 /* QRCodeReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6024AF81200EAAE30017DAF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6024AF87200EAAF10017DAF4 /* Tafelsalz.framework */,
+				6024AF85200EAAEA0017DAF4 /* QRCode.framework */,
+				6024AF83200EAAE30017DAF4 /* Keychain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		604AF083200E8D26000CE8F0 = {
 			isa = PBXGroup;
 			children = (
 				604AF08E200E8D26000CE8F0 /* SecretSharing */,
+				604AF0A3200E8F32000CE8F0 /* Dependencies */,
 				604AF08D200E8D26000CE8F0 /* Products */,
+				6024AF81200EAAE30017DAF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +174,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		604AF0A3200E8F32000CE8F0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */,
+				604AF0B6200E903C000CE8F0 /* QRCodeReader.xcodeproj */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		604AF0A5200E8FA8000CE8F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				604AF0AF200E8FA8000CE8F0 /* PrivacyKit.framework */,
+				604AF0B1200E8FA8000CE8F0 /* PrivacyKitTests.xctest */,
+				604AF0B3200E8FA8000CE8F0 /* PrivacyKit.framework */,
+				604AF0B5200E8FA8000CE8F0 /* PrivacyKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		604AF0B7200E903C000CE8F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				604AF0BB200E903C000CE8F0 /* QRCodeReader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,10 +212,13 @@
 				604AF088200E8D26000CE8F0 /* Sources */,
 				604AF089200E8D26000CE8F0 /* Frameworks */,
 				604AF08A200E8D26000CE8F0 /* Resources */,
+				604AF0C0200E905A000CE8F0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				604AF0BF200E905A000CE8F0 /* PBXTargetDependency */,
+				604AF0C4200E9074000CE8F0 /* PBXTargetDependency */,
 			);
 			name = SecretSharing;
 			productName = SecretSharing;
@@ -119,12 +252,60 @@
 			mainGroup = 604AF083200E8D26000CE8F0;
 			productRefGroup = 604AF08D200E8D26000CE8F0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 604AF0A5200E8FA8000CE8F0 /* Products */;
+					ProjectRef = 604AF0A4200E8FA8000CE8F0 /* PrivacyKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 604AF0B7200E903C000CE8F0 /* Products */;
+					ProjectRef = 604AF0B6200E903C000CE8F0 /* QRCodeReader.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				604AF08B200E8D26000CE8F0 /* SecretSharing */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		604AF0AF200E8FA8000CE8F0 /* PrivacyKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PrivacyKit.framework;
+			remoteRef = 604AF0AE200E8FA8000CE8F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		604AF0B1200E8FA8000CE8F0 /* PrivacyKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PrivacyKitTests.xctest;
+			remoteRef = 604AF0B0200E8FA8000CE8F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		604AF0B3200E8FA8000CE8F0 /* PrivacyKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PrivacyKit.framework;
+			remoteRef = 604AF0B2200E8FA8000CE8F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		604AF0B5200E8FA8000CE8F0 /* PrivacyKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PrivacyKitTests.xctest;
+			remoteRef = 604AF0B4200E8FA8000CE8F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		604AF0BB200E903C000CE8F0 /* QRCodeReader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QRCodeReader.framework;
+			remoteRef = 604AF0BA200E903C000CE8F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		604AF08A200E8D26000CE8F0 /* Resources */ = {
@@ -150,6 +331,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		604AF0BF200E905A000CE8F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PrivacyKit_iOS;
+			targetProxy = 604AF0BE200E905A000CE8F0 /* PBXContainerItemProxy */;
+		};
+		604AF0C4200E9074000CE8F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCodeReader;
+			targetProxy = 604AF0C3200E9074000CE8F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		604AF093200E8D26000CE8F0 /* Main.storyboard */ = {
@@ -281,8 +475,11 @@
 		604AF09F200E8D26000CE8F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMNJSTDFHQ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SecretSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.SecretSharing";
@@ -295,8 +492,11 @@
 		604AF0A0200E8D26000CE8F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMNJSTDFHQ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SecretSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hamburg.informatik.blochberger.SecretSharing";
