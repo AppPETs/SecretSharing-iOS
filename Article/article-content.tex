@@ -12,7 +12,7 @@ Sharing secrets while an attacker is eavesdropping on the process is a problem s
 Modern adoptions thereof, such as the Elliptic-curve Diffie-Hellman (ECDH), are widely used in current implementations such as the TLS protocol.
 
 Assume that two persons want to share a secret between their mobile devices without disclosing their secret to other persons looking over their shoulders.
-They do not want to upload the secret to a web service, as they do not trust the service provider and they cannot establish direct network, Bluetooth or NFC connections.
+They do not want to upload the secret to a web service, as they do not trust the service provider, and they cannot establish direct network, Bluetooth or NFC connections.
 The secret could then be shared by exchanging QR codes between those devices.
 Since QR codes are displayed on the device's screen, an observer could decode it.
 Password protection of the shared secret is not effective, as entering the password could also be observed.
@@ -27,7 +27,7 @@ In the end, an app is presented that demonstrates the described key exchange mec
 \section{Attacker Model}
 
 The attacker, against whom our system is still able to protect the secret, is an outsider and has no direct access to the devices.
-He could be a someone, who is looking at the devices in question (shoulder surfer) or he could own surveillance cameras capturing the key exchange process.
+He could be someone, who is looking at the devices in question (shoulder surfer) or he could own surveillance cameras capturing the key exchange process.
 He can capture and observe the screen of both devices at any given time.
 The attacker behaves passively and only observes the key exchange process.
 He is limited in his computational complexity and cannot break cryptographic systems.
@@ -100,7 +100,7 @@ But even though the usability is impacted, it offers higher security with respec
 Another limitation is that QR codes are limited in size.
 This means that the shared message $m$ cannot be of arbitrary length.
 
-The standard iOS SDK, which is used for scanning QR codes, does not support scanning QR codes in binary format, therfore the values of the QR codes are Base64 encoded.
+The standard iOS SDK, which is used for scanning QR codes, does not support scanning QR codes in binary format, therefore the values of the QR codes are Base64 encoded.
 Due to the QR code format specification, this allows slightly more data to be packed into a single QR code.
 
 % ------------------------------------------------------------------------------
@@ -109,4 +109,4 @@ Due to the QR code format specification, this allows slightly more data to be pa
 
 We presented a method for exchanging secret keys of mobile devices by mutually scanning QR codes.
 The described approach uses state-of-the-art technology and protects against a passive attacker that could capture and observe the whole process.
-It works without network or Bluetooth access and can be used to quickly and securely share secrets between two devices, such as exchanging addresses without the usage of a secure messanger or encrypted mail.
+It works without network or Bluetooth access and can be used to quickly and securely share secrets between two devices, such as exchanging addresses without the usage of a secure messenger or encrypted mail.
