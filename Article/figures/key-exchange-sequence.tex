@@ -1,0 +1,24 @@
+\noindent%
+\begin{sequencediagram}%
+	\newthread[white]{Bob}{Bob}
+	\newinst[3]{Alice}{Alice}
+	\begin{call}{Bob}{$K_B$}{Alice}{$K_A \concat c$}
+		\begin{callself}{Alice}{}{%
+			\shortstack[l]{%
+				$t = k_A K_B$\\
+				$k = \Function{h}{t \concat K_A \concat K_B}$\\
+				$c = \Function{E}{k, m}$
+			}
+		}
+		\end{callself}
+	\end{call}
+	\postlevel%
+	\begin{callself}{Bob}{}{%
+		\shortstack[l]{%
+			$t = k_B K_A$\\
+			$k = \Function{h}{t \concat K_A \concat K_B}$\\
+			$m = \Function{E^{-1}}{k, c}$
+		}
+	}
+	\end{callself}
+\end{sequencediagram}
