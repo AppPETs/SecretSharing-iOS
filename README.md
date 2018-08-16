@@ -4,7 +4,7 @@ This project demonstrates how to share secrets between two iOS devices using QR 
 
 <img src="https://raw.githubusercontent.com/AppPETs/SecretSharing-iOS/master/Article/figures/mockup%403x.png" height="798px" width="400px" alt="Mockup of the user interface of the demo application."/>
 
-For details about the mechanism, see the [white paper](https://github.com/AppPETs/SecretSharing-iOS/master/Article/article.pdf).
+For details about the mechanism, see the [white paper](https://github.com/AppPETs/SecretSharing-iOS/blob/master/Article/article.pdf).
 
 ## Compilation
 
