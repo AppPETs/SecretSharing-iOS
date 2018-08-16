@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 					return
 				}
 
-				guard var clientPkBytes = Data(base64Encoded: scannedQrCode) else {
+				guard var clientPkBytes = scannedQrCode.b64decode() else {
 					DispatchQueue.main.async {
 						self.showError(title: "Cannot import client key", message: "Client key is not Base64 encoded.")
 					}
@@ -84,14 +84,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 				// Encrypt secret with session key
 				let secretBox = SecretBox(secretKey: SecretBox.SecretKey(sessionKey))
-				let ciphertext = secretBox.encrypt(data: Data(self.secretTextField.text!.utf8))
+				let ciphertext = secretBox.encrypt(plaintext: self.secretTextField.text!.utf8Bytes)
 
-				var dataToExport = Data()
-				dataToExport.append(self.keyExchange.publicKey.copyBytes())
-				dataToExport.append(ciphertext.bytes)
+				let dataToExport = self.keyExchange.publicKey.copyBytes() + ciphertext.bytes
 
 				DispatchQueue.main.async {
-					self.qrCodeView.image = QRCode(dataToExport.base64EncodedData()).image
+					self.qrCodeView.image = QRCode(dataToExport.b64encode())?.image
 				}
 
 				self.qrCodeReader = nil
@@ -107,8 +105,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 		keyExchange = KeyExchange(side: .client)
 
-		let pkQr = QRCode(keyExchange.publicKey.copyBytes().base64EncodedData())
-		qrCodeView.image = pkQr.image
+		let pkQr = QRCode(keyExchange.publicKey.copyBytes().b64encode())
+		qrCodeView.image = pkQr?.image
 
 		continueButton.isEnabled = true
 	}
@@ -126,15 +124,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
 					return
 				}
 
-				guard let dataToImport = Data(base64Encoded: scannedQrCode) else {
+				guard let dataToImport = scannedQrCode.b64decode() else {
 					DispatchQueue.main.async {
 						self.showError(title: "Cannot import secret", message: "Data not Base64 encoded.")
 					}
 					return
 				}
 
-				var serverPkBytes = dataToImport[0..<Int(KeyExchange.PublicKey.SizeInBytes)]
-				let cipherTextBytes = Data(dataToImport[Int(KeyExchange.PublicKey.SizeInBytes)...])
+				var serverPkBytes = dataToImport[..<Int(KeyExchange.PublicKey.SizeInBytes)].bytes
+				let cipherTextBytes = dataToImport[Int(KeyExchange.PublicKey.SizeInBytes)...].bytes
 
 				guard let serverPk = KeyExchange.PublicKey(bytes: &serverPkBytes) else {
 					DispatchQueue.main.async {
@@ -160,7 +158,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 					return
 				}
 
-				guard let plaintext = secretBox.decrypt(data: ciphertext) else {
+				guard let plaintext = secretBox.decrypt(ciphertext: ciphertext) else {
 					DispatchQueue.main.async {
 						self.showError(title: "Cannot import secret", message: "Failed to decrypt payload.")
 					}
