@@ -1,6 +1,6 @@
 [submodule "Dependencies/PrivacyKit"]
 	path = Dependencies/PrivacyKit
-	url = git@gitlab.prae.me:apppets/PrivacyKit.git
+	url = https://github.com/AppPETs/PrivacyKit.git
 [submodule "Dependencies/QRCodeReader"]
 	path = Dependencies/QRCodeReader
-	url = git@github.com:blochberger/QRCodeReader.git
+	url = https://github.com/blochberger/QRCodeReader.git
