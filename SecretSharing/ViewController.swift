@@ -187,8 +187,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 	@IBAction func reset() {
 		secretTextField.text = nil
-		navigationItem.leftBarButtonItem?.isEnabled = false
-		navigationItem.rightBarButtonItem?.isEnabled = true
+		navigationItem.leftBarButtonItem?.isEnabled = true
+		navigationItem.rightBarButtonItem?.isEnabled = false
 		qrCodeView.image = nil
 		continueButton.isEnabled = false
 	}
